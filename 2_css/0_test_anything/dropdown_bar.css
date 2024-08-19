@@ -1,0 +1,56 @@
+ul{ 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Nội dung bị tràn ra sẽ bị ẩn đi */
+    background-color: #384443;
+}
+
+li{ 
+    float: left;
+}
+
+li a, .dropbtn{ 
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+li a:hover, .dropdown:hover .dropbtn{ 
+    background-color: red;
+}   
+
+li.dropdown{ 
+    display: inline-block;
+}
+
+.dropdown-content{ 
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    /* Tạo hiệu ứng đổ bóng để cho nó nổi lên so với 
+    body background */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* Đảm bảo là khi pop up nổi lên thì nó ẽ hiện lên trước
+    các thành phần cho trong trang đó */
+    z-index: 1;
+}
+
+.dropdown-content a{ 
+    color: black;
+    padding: 12px 6px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover{ 
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content{ 
+    display: block;
+}
