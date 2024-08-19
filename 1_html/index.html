@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>CatPhotoApp</title>
+</head>
+
+<body>
+    <h2>CatPhotoApp</h2>
+    <main>
+        <h3>Cat Photos</h3>
+
+        <p>Click here to view more cat photos <a href="#" target="_blank"></a></p>
+        <img src="" alt="">
+
+        <a href="#"><img
+                src="https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg?crop=1xw:0.84415xh;center,top"
+                alt="A cute orange cat lying on its back"></a>
+
+        <h3>Cat Lists</h3>
+        <div class="lists">
+            <p>Things cats love:</p>
+            <ul>
+                <li>cat nip</li>
+                <li>laser pointers</li>
+                <li>lasagna</li>
+            </ul>
+            <!--If you put the image in the same folder of the index.html-->
+            <img src="lasagna.jpg" alt="Lasagna">
+
+
+            <p>Things cats hate:</p>
+            <ol>
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+            </ol>
+        </div>
+
+        <img src="cats.jpg" alt="Cats">
+        <form action="/submit-cat-photo">
+            <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor"> indoor</label>
+            <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor"> outdoor</label>
+            <br>
+
+            <label for="loving"><input id="loving" type="checkbox" name="personality" checked>Loving</label>
+            <label for="lazy"><input id="lazy" type="checkbox" name="personality" checked>Lazy</label>
+            <label for="energetic"><input id="energetic" type="checkbox" name="personality" checked>Energetic</label>
+
+            <br>
+
+            <input type="text" placeholder="cat photo URL" required>
+            <button type="submit"> Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p><small>No Copyright - freeCodeCamp.org - <a href="https://freecodecamp.org">freeCodeCamp</a></small></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/*Ban đầu thì ta nên set mọi thứ trở về 0*/
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Tạo font chữ chung cho body*/
+body{ 
+    margin: 0.5rem;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+/*Cài đặt cho thanh điều hướng*/
+nav{ 
+    border: 2px solid #333;
+    border-radius: 2rem;
+    margin: 0 auto 1rem;
+    max-width: 600px; /*Có nghĩa là chúng ta đang giới hạn cái khung nav 
+    tối đa là chỉ có 600px*/
+    font-size:  3rem;
+    line-height: 7rem;
+}
+
+h2{ 
+    padding: 1rem;
+    background: gold;
+    border-radius:  2rem 2rem 0 0; /*Ở đây ta đang muốn hai cái góc ở đầu 
+    trên nó fit với lại cái khung nav cho nên ta set cho top left và top right 
+    2rem*/
+}
+
+ul{ 
+    list-style-type: none; /*Làm biến mất đi dấu chấm của list*/
+}
+
+li{ 
+    border-top: 1px solid #333;
+}
+
+/*Biến li, a thành một block --> Lúc này cái set ở dưới nó sẽ full màu cho nguyên
+ cái block*/
+li, a{ 
+    display: block;
+}
+
+li a,
+li a:visited{ 
+    text-decoration: none;
+    color: #333;
+}
+
+li a:hover,
+li a:focus{ 
+    background: #333;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+li:last-child a{ 
+    border-radius: 0 0 2rem 2rem;
+}
