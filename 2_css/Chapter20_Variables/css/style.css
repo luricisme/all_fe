@@ -7,13 +7,23 @@
   box-sizing: border-box;
 }
 
+/* || VARIABLES */
+:root{ 
+  /* COLOR */
+  --BGCOLOR: #475569;
+  --ALT-BGCOLOR: #1E293B;
+  --RADIAL-COLOR: whitesmoke;
+  --LIGHT-COLOR: whitesmoke;
+}
+
+
 /* || GENERAL STYLES */
 body {
   font: 1.5rem "Nunito", sans-serif;
   min-height: 100vh;
 
-  background-color: #475569;
-  background-image: radial-gradient(whitesmoke, #475569);
+  background-color: var(--BGCOLOR);
+  background-image: radial-gradient(whitesmoke, var(--BGCOLOR));
   display: flex;
   flex-direction: column;
 }
@@ -31,7 +41,7 @@ footer {
 header,
 footer {
   position: sticky;
-  background-color: #1E293B;
+  background-color: var(--ALT-BGCOLOR);
   color: whitesmoke;
 }
 
