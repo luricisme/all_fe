@@ -37,6 +37,8 @@ body {
   min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
+  gap: 1em;
 }
 
 /* || BLOCKS */
